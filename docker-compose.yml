@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ubuntu-builder:
+    build: .
+    volumes:
+      - ./container-builds/target:/build/src-tauri/target
+      - ./container-builds/crate-cache:/build/src-tauri/crate-cache
