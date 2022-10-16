@@ -1,0 +1,76 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "http://localhost:4200/",
+    "distDir": "../ng-accent-char-ui/dist/ng-accent-char-ui"
+  },
+  "package": {
+    "productName": "Accent Character Lookup",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "Utility",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.pieterdev.accentcharlookup",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "fullscreen": false,
+        "center": true,
+        "focus": true,
+        "height": 435,
+        "width": 600,
+        "alwaysOnTop": true,        
+        "resizable": false,
+        "title": "Accent character lookup",
+        "transparent": false,
+        "visible": true,
+        "decorations": true,
+        "skipTaskbar": false,
+        "label": "ACL",
+        "fileDropEnabled": false
+      }
+    ]
+  }
+}

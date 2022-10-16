@@ -1,0 +1,17 @@
+{
+  "name": "alt-code-lookup-app",
+  "scripts": {
+    "tauri": "tauri",
+    "ui-build": "cd ng-accent-char-ui && npm install && npm run build",
+    "ui-dev": "cd ng-accent-char-ui  && npm install &&  ng serve",
+    "publish": "npm run ui-build && npm run tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
